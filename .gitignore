@@ -1,0 +1,9 @@
+# ignore accidental files
+.swp
+.DS_Store
+
+# ignore node_modules
+node_modules/
+
+# ignore coverage by jest
+/coverage
