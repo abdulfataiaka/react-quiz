@@ -1,0 +1,41 @@
+#page-view {
+  #numbers {
+    display: block;
+    float: left;
+    min-height: 100px;
+    width: 27%;
+    border-radius: 3px;
+
+    div:first-child {
+      color: black;
+      font-weight: 300;
+      font-size: 23px;
+      margin: 0 0 50px;
+    }
+
+    div:last-child {
+      span {
+        display: block;
+        float: left;
+        width: 35px;
+        height: 26px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: $color-blue;
+        color: $color-white;
+        text-align: center;
+        font-size: 15px;
+        margin: 0 20px 20px 0;
+        font-weight: 100;
+        padding-top: 9px;
+        border: 2px solid transparent;
+
+        &.answered {
+          color: $color-blue;
+          background: $color-white;
+          border-color: $color-blue;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+#page-view {
+  #question-section {
+    width: 72%;
+    float: right;
+
+    #question {
+      @include gray-bg-div (flex, 150px, 20px 5%);
+      flex-flow: column wrap;
+      justify-content: center;
+      align-content: center;
+    }
+
+    #options {
+      margin-top: 20px;
+
+      button {
+        @include blue-btn();
+        width: 90%;
+        padding: 20px 5%;
+        margin-top: 20px;
+      }
+    }
+  }
+}

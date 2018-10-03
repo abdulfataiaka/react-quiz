@@ -1,0 +1,25 @@
+@mixin  gray-bg-div ($display, $height, $padding) {
+  display: $display;
+  background: #F7F7F7;
+  border-radius: 3px;
+  height: $height;
+  padding: $padding;
+  font-size: 21px;
+  line-height: 180%;
+  text-align: center;
+}
+
+@mixin blue-btn {
+  all: unset;
+  background: $color-blue;
+  border-radius: 3px;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: background .5s;
+  
+  &:hover {
+    background: $color-light-blue;
+  }
+}

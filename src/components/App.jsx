@@ -1,15 +1,23 @@
-import React, { Component } from 'react';
-import '../stylesheets/global/main.scss';
+import React from 'react';
+import '../stylesheets/main.scss';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+import Header from './Header';
+import Numbers from './Numbers';
+import Question from './Question';
+import QuizStart from './QuizStart';
+import QuizEnd from './QuizEnd';
 
-  render() {
-    return <div>Welcome to react starter kit</div>;
-  }
-}
+const App = () => (
+  <div>
+    <Header />
+
+    <div id="page-view" className="clearfix">
+      <Numbers />
+      <Question />
+      <QuizStart />
+      <QuizEnd />
+    </div>
+  </div>
+);
 
 export default App;
