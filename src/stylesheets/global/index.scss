@@ -2,3 +2,21 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: 'Roboto', sans-serif, Helvetica, Arial;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.clearfix {
+  content: '';
+  display: block;
+  overflow: hidden;
+}
+
+#page-view {
+  width: 84%;
+  margin: 0 auto;
+  margin-top: 50px;
+}

@@ -1,0 +1,55 @@
+#page-view {
+  #quiz-end {
+    width: 72%;
+    float: right;
+
+    #about {
+      @include gray-bg-div (
+        block, auto,
+        80px 5%
+      );
+
+      line-height: unset;
+      font-size: 50px;
+      font-weight: 400;
+      color: $color-light-black;
+
+      div {
+        font-size: 15px;
+        color: $color-black;
+        margin-top: 10px;
+        font-weight: 200;
+      }
+    }
+
+    #control {
+      margin-top: 60px;
+
+      div {
+        font-size: 30px;
+        text-align: center;
+        color: $color-blue;
+        font-weight: 100;
+
+        i {
+          margin-right: 20px;
+        }
+
+        &.danger {
+          color: $color-red;
+        }
+
+        &.success {
+          color: $color-green;
+        }
+      }
+
+      button {
+        @include blue-btn();
+        display: block;
+        margin: 60px auto 0;
+        padding: 14px 60px;
+      }
+    }
+  }
+}

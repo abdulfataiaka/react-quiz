@@ -22,6 +22,7 @@
     }
   },
   "rules": {
-    "react/jsx-uses-react": "error"
+    "react/jsx-uses-react": "error",
+    "import/no-unresolved": 0
   }
 }
