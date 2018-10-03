@@ -1,12 +1,14 @@
 module.exports = {
   setupFiles: [
-    "<rootDir>/enzyme.config.js"
+    '<rootDir>/enzyme.config.js',
   ],
-  collectCoverage: true,
   collectCoverageFrom: [
-    "src/**/*.{js,jsx}",
-    "!src/index.js",
-    "!src/helpers/*.js"
+    'src/**/*.{js,jsx}',
+    '!src/index.js',
   ],
-  coverageDirectory: "coverage"
-}
+  moduleNameMapper: {
+    '.scss$': 'identity-obj-proxy',
+  },
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+};

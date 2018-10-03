@@ -3,11 +3,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import App from '../../components/App';
+import Header from '../../components/Header';
 
-const wrapper = shallow(<App />);
+const wrapper = shallow(<Header />);
 
-describe('App Component UI', () => {
+describe('Header Component UI', () => {
   it('should render a react component', () => {
     expect(wrapper.length).toBe(1);
   });

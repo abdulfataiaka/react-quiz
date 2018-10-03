@@ -15,7 +15,7 @@ const App = () => (
       <Numbers />
       <Question />
       <QuizStart />
-      <QuizEnd />
+      <QuizEnd pass />
     </div>
   </div>
 );
