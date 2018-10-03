@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const QuizEnd = () => (
+const QuizEnd = ({ pass }) => (
   <section id="quiz-end" style={{ display: 'none' }}>
     <div id="about">
       500 Points
@@ -9,7 +10,7 @@ const QuizEnd = () => (
 
     <div id="control">
       {
-        true
+        pass
           ? (
             <div className="success">
               <i className="fas fa-thumbs-up" />
@@ -28,5 +29,9 @@ const QuizEnd = () => (
     </div>
   </section>
 );
+
+QuizEnd.propTypes = {
+  pass: PropTypes.bool.isRequired,
+};
 
 export default QuizEnd;

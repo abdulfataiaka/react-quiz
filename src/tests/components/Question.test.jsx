@@ -3,11 +3,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import App from '../../components/App';
+import Question from '../../components/Question';
 
-const wrapper = shallow(<App />);
+const wrapper = shallow(<Question />);
 
-describe('App Component UI', () => {
+describe('Question Component UI', () => {
   it('should render a react component', () => {
     expect(wrapper.length).toBe(1);
   });
