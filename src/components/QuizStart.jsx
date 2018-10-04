@@ -14,9 +14,7 @@ const QuizStart = ({ startQuiz, questionsCount }) => (
         &nbsp;
         <span>{questionsCount} questions</span>
         &nbsp;
-        and there is a time limit of
-        &nbsp;
-        <span>4 minute 30 seconds</span>
+        and there is an unlimited time for you to answer quiz questions
       </p>
 
       <p>
