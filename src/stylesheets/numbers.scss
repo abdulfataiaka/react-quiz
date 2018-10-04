@@ -7,10 +7,30 @@
     border-radius: 3px;
 
     div:first-child {
+      width: 100%;
       color: black;
       font-weight: 300;
+      padding-top: 10px;
+      min-height: 70px;
       font-size: 23px;
-      margin: 0 0 50px;
+
+      span {
+        display: block;
+        padding: 8px 0;
+        float: right;
+        border-radius: 2px;
+        font-size: 18px;
+        margin: -6px 16% 0 0;
+        width: 70px;
+        overflow: hidden;
+        text-align: center;
+        color: white;
+        background: $color-light-red;
+
+        i {
+          margin-right: 10px;
+        }
+      }
     }
 
     div:last-child {

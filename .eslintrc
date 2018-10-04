@@ -23,6 +23,9 @@
   },
   "rules": {
     "react/jsx-uses-react": "error",
-    "import/no-unresolved": 0
+    "react/jsx-one-expression-per-line": 0,
+    "import/no-unresolved": 0,
+    "comma-dangle": 0,
+    "brace-style": 0
   }
 }

@@ -1,19 +1,31 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Question = () => (
-  <div id="question-section" style={{ display: 'none' }}>
+const Question = ({ question, options, optionBtnClick }) => (
+  <div id="question-section">
     <div id="question">
-      Who is the next president of nigeria that did not
-      testify to the atonement of this life
+      { question }
     </div>
 
     <div id="options">
-      <button type="button">President Muhammadu buhari</button>
-      <button type="button">President Ahmadu Bello</button>
-      <button type="button">President Kingslon Aina</button>
-      <button type="button">President Yekini Adesile</button>
+      {Object.keys(options).map(key => (
+        <button
+          type="button"
+          key={key}
+          name={key}
+          onClick={optionBtnClick}
+        >
+          {options[key]}
+        </button>
+      ))}
     </div>
   </div>
 );
+
+Question.propTypes = {
+  optionBtnClick: PropTypes.func.isRequired,
+  question: PropTypes.string.isRequired,
+  options: PropTypes.shape({}).isRequired
+};
 
 export default Question;
