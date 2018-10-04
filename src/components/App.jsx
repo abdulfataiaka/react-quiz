@@ -225,7 +225,6 @@ class App extends Component {
       questionsCount,
       questionsAnswered,
       score,
-      quizView,
       wrongSelectionCount
     } = this.state;
 
@@ -241,7 +240,6 @@ class App extends Component {
             questionsCount={questionsCount}
             questionsAnsweredCount={questionsAnswered.length}
             wrongSelectionCount={wrongSelectionCount}
-            showWrong={quizView === QUESTION}
           />
 
           { this.renderQuizStart() }

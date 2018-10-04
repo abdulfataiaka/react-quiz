@@ -5,7 +5,12 @@ import { shallow } from 'enzyme';
 
 import Header from '../../components/Header';
 
-const wrapper = shallow(<Header />);
+const props = {
+  wrongs: 5,
+  score: 5
+};
+
+const wrapper = shallow(<Header {...props} />);
 
 describe('Header Component UI', () => {
   it('should render a react component', () => {

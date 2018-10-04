@@ -1,4 +1,4 @@
-import { START } from './constants';
+import { START, QUIZ_COMPLETE } from './constants';
 
 export const appState = {
   question: 0,
@@ -6,15 +6,9 @@ export const appState = {
   questionsAnswered: [],
   questionsCount: 0,
   quizView: START,
-  quizEndReason: 'Completed all questions',
+  quizEndReason: QUIZ_COMPLETE,
   wrongSelectionCount: 0,
-  score: 0,
-
-  timer: {
-    handle: null,
-    minutes: 4,
-    seconds: 30
-  }
+  score: 0
 };
 
 export default {};

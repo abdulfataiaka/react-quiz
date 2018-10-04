@@ -1,0 +1,25 @@
+{
+  "questions": [
+    {
+      "question": "What is the name of the next prresident of Nigeria 1",
+      "answer": "B",
+      "options": {
+        "A": "Muhammadu Buhari",
+        "B": "Amadu Bello",
+        "C": "Shagari Awolowo",
+        "D": "Tolulope Aina"
+      }
+    },
+
+    {
+      "question": "What is the name of the next prresident of Nigeria 1",
+      "answer": "C",
+      "options": {
+        "A": "Muhammadu Buhari",
+        "B": "Amadu Bello",
+        "C": "Shagari Awolowo",
+        "D": "Tolulope Aina"
+      }
+    } 
+  ]
+}
