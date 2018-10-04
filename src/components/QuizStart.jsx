@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const QuizStart = () => (
-  <section id="quiz-start" style={{ display: 'non' }}>
+const QuizStart = ({ startQuiz, questionsCount }) => (
+  <section id="quiz-start">
     <div id="about">
       <p>
         The quiz is currently not official, its just a nice way
@@ -11,7 +12,7 @@ const QuizStart = () => (
       <p>
         The quiz contains
         &nbsp;
-        <span>40 questions</span>
+        <span>{questionsCount} questions</span>
         &nbsp;
         and there is a time limit of
         &nbsp;
@@ -31,12 +32,22 @@ const QuizStart = () => (
     <div id="control">
       <div>
         <i className="fas fa-flag-checkered" />
-        So, what are you waiting for ? Good Luck !
+        So, what are you waiting for? Good Luck!
       </div>
 
-      <button type="button">Start Quiz</button>
+      <button
+        type="button"
+        onClick={startQuiz}
+      >
+        Start Quiz
+      </button>
     </div>
   </section>
 );
+
+QuizStart.propTypes = {
+  startQuiz: PropTypes.func.isRequired,
+  questionsCount: PropTypes.number.isRequired,
+};
 
 export default QuizStart;

@@ -1,16 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const QuizEnd = ({ pass }) => (
-  <section id="quiz-end" style={{ display: 'none' }}>
+const QuizEnd = ({
+  score,
+  percent,
+  restartQuizBtnHandler,
+  quizEndReason
+}) => (
+  <section id="quiz-end">
     <div id="about">
-      500 Points
-      <div>Time Elapsed</div>
+      {percent}% - {score} Points
+      <div>{quizEndReason}</div>
     </div>
 
     <div id="control">
       {
-        pass
+        percent >= 50
           ? (
             <div className="success">
               <i className="fas fa-thumbs-up" />
@@ -25,13 +30,21 @@ const QuizEnd = ({ pass }) => (
           )
       }
 
-      <button type="button">Restart Quiz</button>
+      <button
+        type="button"
+        onClick={restartQuizBtnHandler}
+      >
+        Restart Quiz
+      </button>
     </div>
   </section>
 );
 
 QuizEnd.propTypes = {
-  pass: PropTypes.bool.isRequired,
+  score: PropTypes.number.isRequired,
+  quizEndReason: PropTypes.string.isRequired,
+  percent: PropTypes.number.isRequired,
+  restartQuizBtnHandler: PropTypes.func.isRequired
 };
 
 export default QuizEnd;
