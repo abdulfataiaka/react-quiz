@@ -13,3 +13,6 @@ env:
 
 script:
   - yarn test
+
+after_success:
+  - CODECLIMATE_REPO_TOKEN=$CODECLIMATE_REPO_TOKEN codeclimate-test-reporter < coverage/lcov.info
