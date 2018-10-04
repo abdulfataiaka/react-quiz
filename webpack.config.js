@@ -39,6 +39,7 @@ module.exports = {
     port: 9000,
     overlay: true,
     compress: true,
+    disableHostCheck: true,
     watchContentBase: true,
     watchOptions: {
       poll: true,
