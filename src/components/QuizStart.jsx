@@ -38,6 +38,7 @@ const QuizStart = ({ startQuiz, questionsCount }) => (
       <button
         type="button"
         onClick={startQuiz}
+        id="start-quiz-btn"
       >
         Start Quiz
       </button>

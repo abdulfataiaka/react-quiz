@@ -5,7 +5,12 @@ import { shallow } from 'enzyme';
 
 import QuizStart from '../../components/QuizStart';
 
-const wrapper = shallow(<QuizStart />);
+const props = {
+  startQuiz: jest.fn(),
+  questionsCount: 20
+};
+
+const wrapper = shallow(<QuizStart {...props} />);
 
 describe('QuizStart Component UI', () => {
   it('should render a react component', () => {
