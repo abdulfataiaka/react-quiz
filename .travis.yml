@@ -14,5 +14,18 @@ env:
 script:
   - yarn test
 
+before_deploy:
+  - yarn install
+  - yarn global add now
+  - now rm react-quiz -y --token $NOW_TOKEN_TWO || true
+
+deploy:
+  provider: script
+  script: now --token $NOW_TOKEN_TWO --public
+  skip_cleanup: true
+  on:
+    branch: develop
+    master: true
+
 after_success:
   - CODECLIMATE_REPO_TOKEN=$CODECLIMATE_REPO_TOKEN codeclimate-test-reporter < coverage/lcov.info
